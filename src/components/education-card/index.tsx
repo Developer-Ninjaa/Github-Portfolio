@@ -5,10 +5,12 @@ import { skeleton } from '../../utils';
 const ListItem = ({
   time,
   degree,
+  stream,
   institution,
 }: {
   time: React.ReactNode;
   degree?: React.ReactNode;
+  stream?: React.ReactNode;
   institution?: React.ReactNode;
 }) => (
   <li className="mb-5 ml-4">
@@ -18,6 +20,7 @@ const ListItem = ({
     ></div>
     <div className="my-0.5 text-xs">{time}</div>
     <h3 className="font-semibold">{degree}</h3>
+    <div className="mb-4 font-Bold">{stream}</div>
     <div className="mb-4 font-normal">{institution}</div>
   </li>
 );
@@ -76,6 +79,7 @@ const EducationCard = ({
                     time={`${item.from} - ${item.to}`}
                     degree={item.degree}
                     institution={item.institution}
+                    stream={item.stream}
                   />
                 ))}
               </>
