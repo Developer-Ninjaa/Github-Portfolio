@@ -115,10 +115,10 @@ const CONFIG = {
       to: '2023',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'CPS International',
+      degree: 'Intermediate (70%)',
+      from: '2018',
+      to: '2019',
     },
   ],
   publications: [
